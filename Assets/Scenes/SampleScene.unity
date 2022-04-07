@@ -287,7 +287,7 @@ RectTransform:
   m_GameObject: {fileID: 269568409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 1.2109326, y: 1.2109326, z: 1.2109326}
   m_Children:
   - {fileID: 151123259}
   m_Father: {fileID: 1697952691}
@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -362, y: -264}
+  m_AnchoredPosition: {x: -190, y: -103}
   m_SizeDelta: {x: 90, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269568411
@@ -341,7 +341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 269568412}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1697952692}
+        m_TargetAssemblyTypeName: Arduino, Assembly-CSharp
+        m_MethodName: ToggleFan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &269568412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9056604, g: 0.8834461, b: 0.8834461, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -490,14 +502,14 @@ RectTransform:
   m_GameObject: {fileID: 1011654364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.64793, y: 0.64793, z: 0.64793}
   m_Children: []
   m_Father: {fileID: 1697952691}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -454, y: 318}
+  m_AnchoredPosition: {x: -174, y: 141}
   m_SizeDelta: {x: 617.5204, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011654366
@@ -547,8 +559,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -624,14 +636,14 @@ RectTransform:
   m_GameObject: {fileID: 1073774926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.64793, y: 0.64793, z: 0.64793}
   m_Children: []
   m_Father: {fileID: 1697952691}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 601, y: 318}
+  m_AnchoredPosition: {x: 346, y: 141}
   m_SizeDelta: {x: 617.5204, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073774928
@@ -681,8 +693,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -914,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -985,6 +997,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   temp: {fileID: 2074495103}
   speed: {fileID: 2104138330}
+  fanButton: {fileID: 269568412}
+  lightButton: {fileID: 1903661901}
 --- !u!1 &1760947440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,7 +1093,7 @@ RectTransform:
   m_GameObject: {fileID: 1903661898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 1.2109326, y: 1.2109326, z: 1.2109326}
   m_Children:
   - {fileID: 1607160642}
   m_Father: {fileID: 1697952691}
@@ -1087,7 +1101,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 407, y: -264}
+  m_AnchoredPosition: {x: 199, y: -103}
   m_SizeDelta: {x: 90, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903661900
@@ -1133,7 +1147,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1903661901}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1697952692}
+        m_TargetAssemblyTypeName: Arduino, Assembly-CSharp
+        m_MethodName: ToggleLight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1903661901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,7 +1173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.90588236, g: 0.8862745, b: 0.8862745, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1199,14 +1225,14 @@ RectTransform:
   m_GameObject: {fileID: 2074495101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.64793, y: 0.64793, z: 0.64793}
   m_Children: []
   m_Father: {fileID: 1697952691}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -415.46326, y: 112}
+  m_AnchoredPosition: {x: -199, y: 87}
   m_SizeDelta: {x: 240.2769, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074495103
@@ -1335,14 +1361,14 @@ RectTransform:
   m_GameObject: {fileID: 2104138328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.64793, y: 0.64793, z: 0.64793}
   m_Children: []
   m_Father: {fileID: 1697952691}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 490, y: 112}
+  m_AnchoredPosition: {x: 240.00003, y: 87}
   m_SizeDelta: {x: 167.2034, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104138330
