@@ -2,6 +2,8 @@
 
 const int sensor = 7;
 const int motorPin = 3;
+const int ledPin = 8;
+const int ldrPin = A0;
 float backup = 0.0f;
 DHT dht(sensor, DHT11);
 
@@ -17,6 +19,7 @@ void loop()
 {
   delay(2000);
   float t = dht.readTemperature();
+  int brightness = analogRead(ldrPin);
   if(!isnan(t))
   {
     backup = t;
@@ -55,5 +58,15 @@ void loop()
     Serial.print(t);
     Serial.println(" 5");
     analogWrite(motorPin, 255);
+  }
+
+
+  if (brightness < 300)
+  {
+    digitalWrite(ledPin, HIGH);
+  }
+  else
+  {
+    digitalWrite(ledPin, LOW);
   }
 }
