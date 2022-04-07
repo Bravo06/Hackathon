@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -284, y: -264}
+  m_AnchoredPosition: {x: -362, y: -264}
   m_SizeDelta: {x: 90, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &269568411
@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95, y: 320}
+  m_AnchoredPosition: {x: -454, y: 318}
   m_SizeDelta: {x: 617.5204, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011654366
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Room Temperature: '
+  m_text: 'Room Temperature '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -631,7 +631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: 216}
+  m_AnchoredPosition: {x: 601, y: 318}
   m_SizeDelta: {x: 617.5204, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073774928
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fan Speed: '
+  m_text: 'Fan Speed '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -877,6 +877,7 @@ GameObject:
   - component: {fileID: 1697952690}
   - component: {fileID: 1697952689}
   - component: {fileID: 1697952688}
+  - component: {fileID: 1697952692}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -970,6 +971,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1697952692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697952687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64bb60fa9f7830142954b689b35a6721, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp: {fileID: 2074495103}
+  speed: {fileID: 2104138330}
 --- !u!1 &1760947440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,7 +1087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324, y: -264}
+  m_AnchoredPosition: {x: 407, y: -264}
   m_SizeDelta: {x: 90, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903661900
@@ -1191,8 +1206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 243.84143, y: 320}
-  m_SizeDelta: {x: 167.2034, y: 50}
+  m_AnchoredPosition: {x: -415.46326, y: 112}
+  m_SizeDelta: {x: 240.2769, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2074495103
 MonoBehaviour:
@@ -1279,7 +1294,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.6994019, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1327,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 243.84143, y: 220}
+  m_AnchoredPosition: {x: 490, y: 112}
   m_SizeDelta: {x: 167.2034, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104138330
@@ -1350,7 +1365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 1 x
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
