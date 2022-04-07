@@ -1,6 +1,6 @@
 #include "DHT.h"
 
-const int sensor = A0;
+const int sensor = 7;
 const int motorPin = 3;
 DHT dht(sensor, DHT11);
 
@@ -18,7 +18,7 @@ void loop()
   float t = dht.readTemperature();
   Serial.println(t);
 
-  if (t < 20)
+  if (t < 24)
   {
     analogWrite(motorPin, 50);
   }
